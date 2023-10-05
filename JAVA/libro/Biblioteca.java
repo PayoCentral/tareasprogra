@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Biblioteca {
-
+ public class Biblioteca {
+    //Main
     public static void main(String[] args) {
         // Crear libro 1
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Biblioteca {
         LibroTextoBUAP libro1 = new LibroTextoBUAP(titulo1, autor1, curso1, facultad1);
 
         // primer libro
-        libro1.imprimeLibro();
+        LibroTextoBUAP.imprimeLibro(libro1);
 
         // libro 2
         System.out.println("Introduce el título del segundo libro");
@@ -40,8 +40,8 @@ public class Biblioteca {
         Novela novela1 = new Novela(titulo3, autor3, tema2);
 
         // crear libro 2
-        libro2.imprimeLibro();
-        novela1.imprimeLibro();
+        LibroTextoBUAP.imprimeLibro(libro2);
+        Novela.imprimeLibro(novela1);
 
         // Leer precio y actualizar precio
         System.out.println("Ingrese el precio del primer libro");
@@ -49,7 +49,7 @@ public class Biblioteca {
         libro1.setPrecio(precio);
 
         // imprime libro 1
-        libro1.imprimeLibro();
+        LibroTextoBUAP.imprimeLibro(libro1);
     }
 
 }

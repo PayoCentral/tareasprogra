@@ -4,6 +4,12 @@ public class LibroTextoBUAP extends LibroTexto {
         super(t, a, c);
        Facultad =f ;
     }
+    public static void imprimeLibro(Libro l1){
+        System.out.println("Titulo: " + l1.getTitulo());
+        System.out.println("Autores: "+ l1.getAutor());
+        System.out.println("Curso: "+ l1.getCurso());
+        System.out.println("Facultad: " + l1.getFacultad());
+        }
     public String getFacultad(){
         return Facultad;
     }
