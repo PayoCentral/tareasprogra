@@ -22,7 +22,10 @@ public class MensajeTexto {
     }
     
     public static void imprimeInfo(MensajeTexto m1){
-        System.out.println("Código: " + l1.getTitulo());
-        System.out.println("Mensaje: "+ l1.getAutor());
+        if(setCode.equals("tqc")){
+            System.out.println(setMensaje);
+        } else {
+            System.out.println(setCode);
         }
+    }
 }
