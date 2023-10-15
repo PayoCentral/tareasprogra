@@ -14,7 +14,7 @@ public class Cliente {
 
          //Creación de objetos 
     Libro libro1= new Libro (titulo1, autor1);
-        libro1.imprimeLibro();
+        Libro.imprimeLibro(libro1);
 
     System.out.println("Por favor, introduce el título del segundo libro");
         String titulo2 = scanner.nextLine();
@@ -23,7 +23,7 @@ public class Cliente {
 
         //Creación del otro objeto
     Libro libro2= new Libro(titulo2, autor2);
-        libro2.imprimeLibro();
+        Libro.imprimeLibro(libro2);
 
         //Leer el precio del primer libro
     System.out.println("Ingrese el precio del primer libro");
@@ -31,7 +31,7 @@ public class Cliente {
         //Actualización del libro 1
 
     libro1.setPrecio(precio);
-        libro1.imprimeLibro();
+        Libro.imprimeLibro(libro1);
 
     }
 
