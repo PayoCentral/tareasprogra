@@ -5,7 +5,7 @@ public class Novela extends Libro {
         Tema=tt;
         
     }
-   
+
     @Override
     public static void imprimeLibro(Libro l1){
         System.out.println("Titulo: " + l1.getTitulo());

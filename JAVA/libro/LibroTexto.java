@@ -4,6 +4,7 @@ public class LibroTexto extends Libro {
         super(t, a);
         c=Curso;
     }
+    
     public String getCurso(){
         return Curso;
     }

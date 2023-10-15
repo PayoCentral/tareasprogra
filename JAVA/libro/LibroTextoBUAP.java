@@ -4,7 +4,7 @@ public class LibroTextoBUAP extends LibroTexto {
         super(t, a, c);
        Facultad =f ;
     }
-    
+
     @Override
     public static void imprimeLibro(Libro l1){
         System.out.println("Titulo: " + l1.getTitulo());
