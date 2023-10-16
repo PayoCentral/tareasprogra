@@ -1,4 +1,4 @@
-class MensajeTexto {
+public class MensajeTexto {
     private String code;
     private String mensaje;
 
