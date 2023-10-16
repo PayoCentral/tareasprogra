@@ -28,6 +28,7 @@ public class Persona {
         this.residencia = residencia;
     }
 
+    @Override
     public void escribirDatos() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Residencia: " + residencia);

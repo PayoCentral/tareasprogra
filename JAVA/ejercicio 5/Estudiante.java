@@ -29,6 +29,7 @@ public class Estudiante extends Persona {
         this.pagoInscripcion = pagoInscripcion;
     }
 
+    @Override
     public void escribirDatos() {
         super.escribirDatos();
         System.out.println("Facultad: " + facultad);

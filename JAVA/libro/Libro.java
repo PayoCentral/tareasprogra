@@ -11,13 +11,13 @@ public Libro (String t, String a){
     this.precio = 0.0; 
 }
 
-@Override
+
 public static void imprimeLibro(Libro l1){
 System.out.println("Titulo: " + l1.getTitulo());
 System.out.println("Autores: "+ l1.getAutor());
 }
 public void imprimePrecioLibro(){
-    imprimeLibro(null);
+    imprimeLibro(null); 
     System.out.println("Precio: " + precio);
 }
 public void ventanaLibro(){

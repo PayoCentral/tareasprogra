@@ -29,6 +29,7 @@ public class Catedratico extends Persona {
         this.salario = salario;
     }
 
+    @Override
     public void escribirDatos() {
         super.escribirDatos();
         System.out.println("Facultad: " + facultad);

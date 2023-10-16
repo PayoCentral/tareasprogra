@@ -9,8 +9,8 @@ public class LibroTexto extends Libro {
         return Curso;
     }
     
-    @Override
-        public static void imprimeLibro (Libro l1){
+    
+        public void imprimeLibro (LibroTexto l1){
         System.out.println("Titulo: " + l1.getTitulo());
         System.out.println("Autores: "+ l1.getAutor());
         //En esta parte iba la siguiente línea  
