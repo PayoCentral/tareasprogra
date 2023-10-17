@@ -1,18 +1,33 @@
 public class MensajeTexto {
+    private String code;
+    private String mensaje;
 
-    private String codigo;
-    private String texto;
-
-    public MensajeTexto(String codigo, String texto) {
-        this.codigo = codigo;
-        this.texto = texto;
+    public MensajeTexto(String c, String m) {
+        code = c;
+        mensaje = m;
     }
 
-    public String obtenerCodigo() {
-        return codigo;
+    public String getCode() {
+        return code;
     }
 
-    public String obtenerTexto() {
-        return texto;
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setCode(String c1) {
+        code = c1;
+    }
+
+    public void setMensaje(String m1) {
+        mensaje = m1;
+    }
+
+    public static void imprimeInfo(MensajeTexto m2) {
+        if (m2.getCode().equals("tqc")) {
+            System.out.println(m2.getMensaje());
+        } else {
+            System.out.println(m2.getCode());
+        }
     }
 }
