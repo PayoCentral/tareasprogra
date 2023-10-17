@@ -1,43 +1,33 @@
-import java.util.Scanner;
+public class Mensaje {
 
-public class Mensaje extends MensajeTexto{
-    private String numllamada;
-    private String numdestinatario;
-    
-    public Mensaje(){
-        this("","","","");
-    }
-    
-    public Mensaje(String code, String mensaje, String numllamada, String numdestinatario){
-        super(code, mensaje);
-        this.numllamada=numllamada;
-        this.numdestinatario=numdestinatario;
-    }
-    public Mensaje(MensajeTexto mensajeTexto, String numllamada) {
-        this(mensajeTexto, null, numllamada);
+    private MensajeTexto mensajeTexto;
+    private String numeroLlamada;
+    private String numeroRemitente;
+
+    public Mensaje(MensajeTexto mensajeTexto, String numeroLlamada, String numeroRemitente) {
+        this.mensajeTexto = mensajeTexto;
+        this.numeroLlamada = numeroLlamada;
+        this.numeroRemitente = numeroRemitente;
     }
 
-    public Mensaje(MensajeTexto mensajeTexto) {
-        this(mensajeTexto, null, null);
+    public Mensaje(String texto, String numeroLlamada, String numeroRemitente) {
+        this.mensajeTexto = new MensajeTexto (texto, numeroRemitente);
+        this.numeroLlamada = numeroLlamada;
+        this.numeroRemitente = numeroRemitente;
     }
 
-    public String getNumllamada(){
-        return numllamada;
+    public Mensaje(String texto, String numeroLlamada) {
+        this(texto, numeroLlamada, null);
     }
-    public String getNumdestinatario(){
-        return numdestinatario;
+
+    public void actualizarNumeroLlamada(String numeroLlamada) {
+        this.numeroLlamada = numeroLlamada;
     }
-    public void setNumllamada(String a1){
-        numllamada=a1;
-    }
-    public void setNumdestinatario(String a2){
-        numllamada=a2;
-    }
-    
-     public static void imprimeMensajeNum(Mensaje k1) {
-        System.out.println("Código: " + k1.getCode());
-        System.out.println("Mensaje: " + k1.getMensaje());
-        System.out.println("Número de llamada: " + k1.getNumllamada());
-        System.out.println("Número del remitente: " + k1.getNumdestinatario());
+
+    public void imprimir() {
+        System.out.println("Mensaje de texto: " + mensajeTexto.obtenerTexto());
+        System.out.println("Código: " + mensajeTexto.obtenerCodigo());
+        System.out.println("Número de llamada: " + numeroLlamada);
+        System.out.println("Número de remitente: " + numeroRemitente);
     }
 }

@@ -1,0 +1,29 @@
+public class Mensaje extends MensajeTexto{
+    private String numllamada;
+    private String numdestinatario;
+    
+    public Mensaje(){
+        this("","","","");
+    }
+    
+    public Mensaje(String code, String mensaje, String numllamada, String numdestinatario){
+        super(code, mensaje);
+        this.numllamada=numllamada;
+        this.numdestinatario=numdestinatario;
+    }
+    public Mensaje(MensajeTexto mensajeTexto, String numllamada) {
+        this(mensajeTexto, null, numllamada);
+    }
+ public void setCode(String c1) {
+        code = c1;
+  }
+ public void setMensaje(String m1) {
+        mensaje = m1;
+}
+ public static void imprimeInfo(MensajeTexto m2) {
+        if (m2.getCode().equals("tqc")) {
+            System.out.println(m2.getMensaje());
+        } else {
+            System.out.println(m2.getCode());
+        }
+}
