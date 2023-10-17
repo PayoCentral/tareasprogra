@@ -27,10 +27,10 @@ public class Mensaje extends MensajeTexto{
     public String getNumdestinatario(){
         return numdestinatario;
     }
-    public String setNumllamada(String a1){
+    public void setNumllamada(String a1){
         numllamada=a1;
     }
-    public String setNumdestinatario(String a2){
+    public void setNumdestinatario(String a2){
         numllamada=a2;
     }
     
