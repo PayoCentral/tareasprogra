@@ -17,3 +17,5 @@ public class main1{
             }
                     
 }
+
+//hacer promedio 
