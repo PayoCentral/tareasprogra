@@ -20,6 +20,13 @@ public String getFacultad() {
 public int getPromedio(){
     return promedio;
 }
+public void mayorEdad(){
+    if (edad >= 18){
+    System.out.print (nombre+" es un alumno mayor de edad, pues tiene " 
+    +edad+" años" ); } 
+    else {
+        System.out.print (nombre +" es un alumno menor de edad, pues tiene " +edad+ " años" );}
+}
 public void imprimeDatos(){
     System.out.println(getNombre());
     System.out.println(getResidencia());

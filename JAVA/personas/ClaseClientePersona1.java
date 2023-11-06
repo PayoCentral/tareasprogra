@@ -12,8 +12,9 @@ public class ClaseClientePersona1{
         System.out.println(p.getNombre() +" es mayor que " +p1.getNombre());
         Estudiante e = new Estudiante("Jacobo","Merida",26,124,"Ingenieria",9);
         e.imprimeDatos();
-        System.out.println (e.getPromedio());
-        e.mayorEdad();
+        System.out.println(e.getPromedio());
+        System.out.println(e.mayorEdad());
+        
         if  (e.getPromedio() >=0 && e.getPromedio() <=10)
         switch ( e.getPromedio() )
         { 
