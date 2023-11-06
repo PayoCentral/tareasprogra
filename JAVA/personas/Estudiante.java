@@ -1,20 +1,30 @@
 package personas;
 public class Estudiante extends Persona {
-    private String nombre;
-    private String residencia;
-    private int matricula;
-    private String facultad;
+    protected int matricula;
+    protected String facultad;
+    protected int promedio;
 
-    public Estudiante (String n, String r,int m, String f){
-        super(n, r);
-        matricula = m;
-       facultad = f;
-}
+    public Estudiante (String nombre, String residencia,int edad, int matricula, String facultad, int promedio){
+        super(nombre, residencia, edad);
+        this.matricula = matricula;
+        this.facultad = facultad;
+        this.promedio = promedio;
+    }
 
 public int getMatricula() {
     return matricula;
 }
 public String getFacultad() {
     return facultad;
+}
+public int getPromedio(){
+    return promedio;
+}
+public void imprimeDatos(){
+    System.out.println(getNombre());
+    System.out.println(getResidencia());
+    System.out.println(getMatricula());
+    System.out.println(getFacultad());
+    System.out.println(getPromedio());
 }
 }
