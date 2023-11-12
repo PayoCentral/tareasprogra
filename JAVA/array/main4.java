@@ -1,6 +1,6 @@
 public class main4{
     public static void invierteArreglo(int[] v) {
-        for (int i = 0; i < v.length/2; i++) {
+        for (int i = 0;  i < v.length/2; i++) {
         int temp;
         temp = v[i];
         v[i] = v[v.length-1-i];
