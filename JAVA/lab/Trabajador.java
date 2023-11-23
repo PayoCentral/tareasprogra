@@ -1,18 +1,16 @@
 import java.util.Date;
 
 public class Trabajador {
-private String nombre;
-private String puesto;
-private String direccion;
-private String telefono;
-private Date fecha_nacimiento;
-private Date fecha_contrato;
-private String NSS;
+protected String nombre;
+protected String NSS;
+
 
 public Trabajador (String nombre, String NSS){ 
 this.nombre = nombre;
 this.NSS = NSS;
 }
+
+
 public boolean equals (Trabajador t){ 
 return this.NSS.equals(t.NSS);
 }

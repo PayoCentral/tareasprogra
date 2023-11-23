@@ -1,16 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-//package principaltrabajador
+
 
 import javax.swing.JOptionPane;
-
-/**
- *
- * @author Luz A
- */
 public class PrincipalTrabajador {
   public static void main(String[] args) {
   	Trabajador[] trabajador = new Trabajador[5];;
@@ -19,7 +9,7 @@ public class PrincipalTrabajador {
     int continuar;
       
     do{
-       	// Creación de objetos
+       	// Creaciï¿½n de objetos
        do{
               
           String op = JOptionPane.showInputDialog(" 1 :Empleado" + "\n" + " 2 :Consultor");
@@ -32,14 +22,14 @@ public class PrincipalTrabajador {
 		   	trabajador [num]= new Consultor (JOptionPane.showInputDialog("Nombre"),JOptionPane.showInputDialog("Seguro"),Integer.parseInt(JOptionPane.showInputDialog("Horas")),Double.parseDouble(JOptionPane.showInputDialog("Tarifa")));
 		    break;
 		   	    default:
-		   	     JOptionPane.showMessageDialog(null,  "Opción Incorrecta");
+		   	     JOptionPane.showMessageDialog(null,  "Opciï¿½n Incorrecta");
 
 		   }
 
 		   }while((opc < 1) && (opc > 2));
 		   num=num+1;
 		   
-           continuar= JOptionPane.showConfirmDialog(null,"¿Desea añadir otro Trabajador?","Recabando información",JOptionPane.YES_NO_OPTION);
+           continuar= JOptionPane.showConfirmDialog(null,"ï¿½Desea aï¿½adir otro Trabajador?","Recabando informaciï¿½n",JOptionPane.YES_NO_OPTION);
 
           }while(continuar==JOptionPane.YES_OPTION);
          
