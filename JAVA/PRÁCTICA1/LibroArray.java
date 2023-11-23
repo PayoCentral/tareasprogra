@@ -1,15 +1,14 @@
 import javax.swing.JOptionPane;
-class LibroArray{
+public class LibroArray{
   public static void main(String[] args) {
   	Libro[] libroarray = new Libro[7];
     int opc,i,num=0;
     int continuar;
       
     do{
-       	// Creación de objetos
        do{
               
-          String op = JOptionPane.showInputDialog(" 1 :Libro Texto" + "\n" + " 2 :Libro Texto perteneciente a BUAP" + "\n" + " 3 :Libro Texto perteneciente a BUAP sobre Programación"
+          String op = JOptionPane.showInputDialog(" 1 :Libro de Texto" + "\n" + " 2 :Libro Texto perteneciente a BUAP" + "\n" + " 3 :Libro Texto perteneciente a BUAP sobre Programación"
 		  + "\n" + " 4 :Novela" + "\n" + " 5 :Novela Literaria" + "\n" + " 6 :Novela Literaria Corta" + "\n" + " 7 :Cuento");
           opc = Integer.parseInt(op);
           switch(opc){
