@@ -1,3 +1,4 @@
+
 public class Consultor extends Trabajador {
     private int horas;
     private double tarifa;

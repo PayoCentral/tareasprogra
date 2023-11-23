@@ -1,9 +1,8 @@
 
-
 import javax.swing.JOptionPane;
-public class PrincipalTrabajador {
+class PrincipalTrabajador{
   public static void main(String[] args) {
-  	Trabajador[] trabajador = new Trabajador[5];;
+  	Trabajador[] trabajador = new Trabajador[5];
     //Trabajador trabajador[] = new Trabajador[5];
     int opc,i,num=0;
     int continuar;
