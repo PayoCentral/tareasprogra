@@ -87,10 +87,10 @@ class LibroArray{
 
           }while(continuar==JOptionPane.YES_OPTION);
          
-        //  for (i=0;i<num;i++)
-		//       {
-        //        System.out.print(libroarray[i]);
-			//System.out.println(Libro.imprimeLibro(libroarray[i]));
-		//     }
+         for (i=0;i<num;i++)
+		     {
+                System.out.print(libroarray[i]);
+				Libro.imprimePrecioLibro(libroarray[i]);
+		   }
 	}
 }
