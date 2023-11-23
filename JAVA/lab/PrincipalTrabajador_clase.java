@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 class PrincipalTrabajador{
   public static void main(String[] args) {
